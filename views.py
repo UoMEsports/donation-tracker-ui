@@ -17,4 +17,4 @@ def index(request):
         read_retry=None
     )
 
-    return render(request, 'tracker_ui/index.html', dictionary={'event': Event.objects.latest(), 'events': Event.objects.all(), 'admin': admin})
+    return render(request, 'tracker_ui/index.html', context={'event': Event.objects.latest(), 'events': Event.objects.all(), 'admin': admin})
