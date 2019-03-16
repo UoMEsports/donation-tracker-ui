@@ -49,7 +49,7 @@ module.exports = function(opts) {
         devServer: {
             proxy: {
                 '*': {
-                    target: 'http://localhost:8000/',
+                    target: 'http://localhost:8123/',
                     headers: {'X-Webpack': 1}
                 }
             }
